@@ -33,4 +33,4 @@ const UseState = (props) => {
     )
 }
 
-export default UseState
+export default UseState;
