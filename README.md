@@ -6,6 +6,12 @@
 </div>
 
 <div>
+<h4>Aula React Hooks, Udemy</h4>
+<p>Nessas aulas aprendi a desenvolver com hooks do react, literalmente e muito empreendido 
+o que podemos fazer com os hooks, como deixa a sua aplicação muito, mas pratico e maleável.</p>
+</div>
+
+<div>
 <h2>Hooks</h2>
 
 <span>
