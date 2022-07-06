@@ -32,7 +32,7 @@ const Menu = props => (
                     <Link to="/useReducer">useReducer()</Link>
                 </li>
                 <li>
-                    <Link to="/useCustom">useMyHook()</Link>
+                    <Link to="/useCustom">useCustom()</Link>
                 </li>
             </ul>
         </nav>

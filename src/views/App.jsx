@@ -7,6 +7,7 @@ import Content from '../components/layout/Content'
 
 import { DataContext, data } from '../data/DataContex'
 import Store from '../data/Store'
+import UseCustom from './examples/UseCustom'
 
 const App = props => {
 

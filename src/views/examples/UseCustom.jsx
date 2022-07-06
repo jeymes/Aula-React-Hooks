@@ -4,7 +4,7 @@ import SectionTitle from '../../components/layout/SectionTitle'
 import { useCounter } from '../../hooks/useCounter'
 import { useFetch } from '../../hooks/useFetch'
 
-const UseRef = (props) => {
+const UseCustom = (props) => {
 
     const [count, inc, dec] = useCounter()
     
@@ -13,6 +13,7 @@ const UseRef = (props) => {
 
     function showState(states){
         return states.map(state => <li key={state.nome}>{state.nome} - {state.sigla}</li>)
+        // return states.map(state => <li key={state.nome}>{state.nome} - {state.sigla}</li>)
     }
 
     // Url:http://files.cod3r.com.br/curso-react/estados.json
@@ -36,11 +37,11 @@ const UseRef = (props) => {
                 <SectionTitle title="Exercício #02"/>
                 <div className="center">
                     <ul>
-                        {response.loading ? showState(response.data) : false}
+                        {response.data ? showState(response.data) : false}
                     </ul>
                 </div>
         </div>
     )
 }
 
-export default UseRef
+export default UseCustom
