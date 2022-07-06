@@ -1,30 +1,9 @@
 import React, { useReducer } from 'react'
 import PageTitle from '../../components/layout/PageTitle'
 
-const initialState = {
-    cart: [],
-    user: null,
-    number: 0,
-}
+import { initialState, reducer} from '../../store'
+import { numberAdd2, login } from '../../store/actions'
 
-function reducer(state, action) {
-    switch (action.type) {
-        case 'numberAdd2':
-            return { ...state, number: state.number + 2 }
-            case 'numberMulti7':
-            return { ...state, number: state.number * 7 }
-            case 'numberDiv25':
-            return { ...state, number: state.number / 25 }
-            case 'numberInt':
-            return { ...state, number: parseInt(state.number) }
-            case 'numberAddN':
-            return { ...state, number: state.number + action.payload }
-        case 'login':
-            return { ...state, user: {name: action.payload} }
-        default:
-            return state
-    }
-}
 
 const UseReducer = (props) => {
 
@@ -43,9 +22,9 @@ const UseReducer = (props) => {
                 <span className="text">{state.number}</span>
                 <div>
                     <button className="btn"
-                        onClick={() => dispatch({ type: 'login', payload:'Jeymes' })}>login</button>
+                        onClick={() => login(dispatch, 'Maria')}>login</button>
                     <button className="btn"
-                        onClick={() => dispatch({ type: 'numberAdd2' })}>+2</button>
+                        onClick={() => numberAdd2(dispatch)}>+2</button>
                         <button className="btn"
                         onClick={() => dispatch({ type: 'numberMulti7' })}>*7</button>
                         <button className="btn"
