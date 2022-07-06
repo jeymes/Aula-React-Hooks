@@ -56,8 +56,10 @@
 </div>
 
 <div>
-
-<img  />
+<div>
+<h2>Imagem</h2>
+</div>
+<img src="https://user-images.githubusercontent.com/87048226/177658456-ad735e16-a9c2-419a-ae19-eb6600b96e5b.png" />
 
 </div>
 
